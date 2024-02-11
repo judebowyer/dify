@@ -14,7 +14,7 @@ services:
     volumes:
       - ./volumes/db/data:/var/lib/postgresql/data
     ports:
-      - "5432:5432"
+      - "5433:5433"
 
   # The redis cache.
   redis:
@@ -49,7 +49,7 @@ services:
       AUTHORIZATION_ADMINLIST_ENABLED: 'true'
       AUTHORIZATION_ADMINLIST_USERS: 'hello@dify.ai'
     ports:
-      - "8080:8080"
+      - "8081:8081"
 
   # Qdrant vector store.
   # uncomment to use qdrant as vector store.
